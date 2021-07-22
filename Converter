@@ -1,0 +1,48 @@
+using System;
+
+namespace Converter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            double mile = 1610.0;
+            double kilometer = 1000.0;
+            double furlong = 201.0;
+
+            Console.Write("Сколько метров: ");
+            string bufferCount = Console.ReadLine();
+            double countMetre = double.Parse(bufferCount);
+
+            Console.Write("Во что конвертируем? (mile(1), kilometer(2), furlong(3)) ");
+            string bufferConvert = Console.ReadLine();
+
+            if(bufferConvert == "1")
+            {
+                double res = countMetre / mile;
+                Console.WriteLine(res);
+            }
+
+            else if (bufferConvert == "2")
+            {
+                double res = countMetre / kilometer;
+                Console.WriteLine(res);
+            }
+
+            else if (bufferConvert == "3")
+            {
+                double res = countMetre / furlong;
+                Console.WriteLine(res);
+            }
+
+            else
+            {
+                Console.WriteLine("Введено не известное значение...");
+            }
+
+            Console.ReadLine();
+
+        }
+    }
+}
