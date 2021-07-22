@@ -7,15 +7,15 @@ namespace Converter
         static void Main(string[] args)
         {
            
-            double mile = 1610.0;
+            double mile = 1610.0; 
             double kilometer = 1000.0;
             double furlong = 201.0;
 
-            Console.Write("Сколько метров: ");
+            Console.Write("How many meters: ");
             string bufferCount = Console.ReadLine();
             double countMetre = double.Parse(bufferCount);
 
-            Console.Write("Во что конвертируем? (mile(1), kilometer(2), furlong(3)) ");
+            Console.Write("What do we convert to? (mile(1), kilometer(2), furlong(3)) ");
             string bufferConvert = Console.ReadLine();
 
             if(bufferConvert == "1")
@@ -38,7 +38,7 @@ namespace Converter
 
             else
             {
-                Console.WriteLine("Введено не известное значение...");
+                Console.WriteLine("An unknown value is entered...");
             }
 
             Console.ReadLine();
